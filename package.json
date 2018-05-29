@@ -50,6 +50,7 @@
   "scripts": {
     "build": "grunt",
     "prepublish": "npm run build && npm run test",
+    "prepare": "npm run prepublish",
     "publish-coverage": "grunt coveralls",
     "test": "mocha",
     "test-coverage": "COVERAGE=y nyc mocha",
